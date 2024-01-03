@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .d1 {
+            background-color: black;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .d2 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            border-radius: 50%;
+        }
+
+        .d2:nth-child(odd) {
+            background-color: orange;
+        }
+
+        .d2:nth-child(even) {
+            background-color: lightgreen;
+        }
+
+        .d2:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class='d1'>
+        <div class='d2'>1</div>
+        <div class='d2'>2</div>
+        <div class='d2'>3</div>
+    </div>
+    <h1 style="text-align: center; margin-top: 50px;">Flexbox布局範例</h1>
+    <p style="text-align: center;">這是一個使用 Flexbox 佈局的簡單示例，區塊 d1 使用了 display:flex，justify-content 屬性控制了元素之間的空間分配，align-items 屬性控制了元素在交叉軸上的對齊方式。</p>
+</body>
+</html>
