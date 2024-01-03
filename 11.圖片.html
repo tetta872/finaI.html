@@ -1,6 +1,18 @@
 <html>
     <head><title>圖片</title></head>
     <body>
-        <img src="https://github.com/shhuangmust/html/blob/112-1/dog.jpg?raw=true">
+        <script type="text/javascript">
+            var images = [
+                "https://example.com/image1.jpg",
+                "https://example.com/image2.jpg",
+                "https://example.com/image3.jpg",
+                // 在這裡添加更多圖片連結
+            ];
+
+            var randomIndex = Math.floor(Math.random() * images.length);
+            var randomImage = images[randomIndex];
+
+            document.write('<img src="' + randomImage + '">');
+        </script>
     </body>
 </html>
