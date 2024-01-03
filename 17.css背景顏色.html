@@ -1,16 +1,35 @@
+<!DOCTYPE html>
 <html>
-    <head><title>css背景顏色</title>
+<head>
+    <title>css背景顏色</title>
     <style>
         .bg1 {background-color:red;}
         #bg2 {background-color:blue;}
     </style>
-    </head>
-    <body>
-    <span class="bg1">國發會</span>盤點未來重點產業人才，發現逾七成職缺需
+</head>
+<body>
+    <span class="bg1" id="text1">國發會</span>盤點未來重點產業人才，發現逾七成職缺需
     工程及資通訊背景，顯示資通訊領域人才嚴重不足，
     但立委張廖萬堅昨直指，大專資通訊領域一年退學
-    就<span class="bg1">逾五千人</span>，比政府欲補助大學外加的三千名額還
+    就<span class="bg1" id="text2">逾五千人</span>，比政府欲補助大學外加的三千名額還
     多，應正視解決問題；民團則呼籲擴大香港等境外
-    生來台，減緩國力<span id="bg2">缺工</span>衝擊。
-    </body>
+    生來台，減緩國力<span id="bg2" class="text3">缺工</span>衝擊。
+    <script>
+        // 隨機背景顏色
+        var colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+        var randomColor1 = colors[Math.floor(Math.random() * colors.length)];
+        var randomColor2 = colors[Math.floor(Math.random() * colors.length)];
+        document.querySelector('.bg1').style.backgroundColor = randomColor1;
+        document.querySelector('#bg2').style.backgroundColor = randomColor2;
+
+        // 隨機文字內容
+        var texts = ['隨機文字1', '隨機文字2', '隨機文字3', '隨機文字4', '隨機文字5'];
+        var randomText1 = texts[Math.floor(Math.random() * texts.length)];
+        var randomText2 = texts[Math.floor(Math.random() * texts.length)];
+        var randomText3 = texts[Math.floor(Math.random() * texts.length)];
+        document.getElementById('text1').innerHTML = randomText1;
+        document.getElementById('text2').innerHTML = randomText2;
+        document.querySelector('.text3').innerHTML = randomText3;
+    </script>
+</body>
 </html>
