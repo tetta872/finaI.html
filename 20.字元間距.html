@@ -1,18 +1,63 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-        <style>
-            #ls1 {letter-spacing: 1.5em}
-            #ls2 {letter-spacing: -5px}
-        </style>
-    </head>
-    <body>
-        <h1>這是正常的文字間距</h1>
-        <h1 id="ls1">這是較大的文字間距</h1>
-        <h1 id="ls2">這是較小的文字間距</h1>
+<head>
+    <meta charset="utf-8" />
+    <title>豐富的文字間距和樣式</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            color: #333;
+            font-size: 3em;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 0.05em;
+        }
+        #ls1 {
+            letter-spacing: 0.2em;
+            margin-top: 30px;
+            text-align: center;
+            font-style: italic;
+            color: #777;
+        }
+        #ls2 {
+            letter-spacing: -1px;
+            text-decoration: underline;
+            margin-top: 30px;
+            text-align: center;
+            color: #BB0000;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .rotate {
+            transform: rotate(-5deg);
+        }
+        .shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>文字間距和樣式示例</h1>
 
-    </body>
-</html>
+    <p id="ls1">這是一個帶有斜體和較大文字間距的段落。</p>
+
+    <p id="ls2">這是帶有底線和較小文字間距的段落。</p>
+
+    <p class="italic">這是斜體的文字。</p>
+    <p class="bold">這是粗體的文字。</p>
+    <p
