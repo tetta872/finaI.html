@@ -3,6 +3,24 @@
     <body>
         <a href="http://www.google.com">google</a>
         <br>
-       <a href="https://github.com/shhuangmust/html/blob/112-1/11.%E5%9C%96%E7%89%87.html"><img src="https://github.com/shhuangmust/html/blob/112-1/dog.jpg?raw=true"></a>
-     </body>
+        <a id="randomLink" href="#"><img src=""></a>
+
+        <script type="text/javascript">
+            var images = [
+                "https://example.com/image1.jpg",
+                "https://example.com/image2.jpg",
+                "https://example.com/image3.jpg",
+                // 在這裡添加更多圖片連結
+            ];
+
+            var randomIndex = Math.floor(Math.random() * images.length);
+            var randomImage = images[randomIndex];
+
+            var link = document.getElementById('randomLink');
+            var image = link.getElementsByTagName('img')[0];
+
+            link.href = randomImage; // 將超連結的目標設置為隨機圖片連結
+            image.src = randomImage; // 將圖片的連結設置為隨機圖片連結
+        </script>
+    </body>
 </html>
